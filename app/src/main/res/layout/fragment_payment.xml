@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#ffffff"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!-- ImageView for heading -->
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+        <!-- Button for Login with text "Login" -->
+        <Button
+            android:padding="10dp"
+            android:id="@+id/buttonVisa"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:text="Visa"
+            android:background="@drawable/ic_baseline_credit_card_24"
+            android:textColor="#FFF"
+            android:backgroundTint="@android:color/black"/>
+
+        <!-- Button for Login with text "Login" -->
+        <Button
+            android:padding="5dp"
+            android:id="@+id/buttonBkash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:text="BKash"
+            android:background="@drawable/ic_baseline_phone_iphone_24"
+            android:textColor="#FFF"
+            android:backgroundTint="@android:color/black"
+            android:gravity="center" />
+
+
+
+
+        <!-- ProgressBar for Loading Time -->
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

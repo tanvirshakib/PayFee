@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pay_fee">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.pay_fee">
+        <activity android:name=".DeveloperProfile"></activity>
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".SendEmailActivity" />
+        <activity android:name=".DueActivity" />
+        <activity android:name=".DeleteActivity" />
+        <activity android:name=".DeleteAccount" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/Theme.pay_fee.NoActionBar" />
+        <activity
+            android:name=".SecondSignUp"
+            android:label="@string/title_activity_second_sign_up"
+            android:theme="@style/Theme.pay_fee.NoActionBar" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/Theme.pay_fee.NoActionBar" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

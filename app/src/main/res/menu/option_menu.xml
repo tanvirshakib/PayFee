@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Update Profile"
+        android:id="@+id/updatePB">
+
+    </item>
+
+    <item
+        android:title="Delete Account"
+        android:id="@+id/deletAccount">
+    </item>
+
+    <item
+        android:id="@+id/social"
+        android:orderInCategory="100"
+        android:title="Social Site">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:title="Facebook"/>
+
+            <item
+                android:id="@+id/instagram"
+                android:title="Instagram"/>
+
+            <item
+                android:id="@+id/youtube"
+                android:title="Youtube"/>
+        </menu>
+    </item>
+
+
+
+
+    <item
+        android:title="Developer Profile"
+        android:id="@+id/dProfile">
+    </item>
+
+
+    <item
+        android:title="Logout"
+        android:id="@+id/logoutButton">
+    </item>
+</menu>

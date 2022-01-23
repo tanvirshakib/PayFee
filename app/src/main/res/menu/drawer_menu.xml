@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_profile2"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_history2"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_due2"
+        android:icon="@drawable/ic_baseline_money_off_24"
+        android:title="Due" />
+
+    <item
+        android:id="@+id/navigation_transaction2"
+        android:icon="@drawable/ic_baseline_connect_without_contact_24"
+        android:title="Transaction" />
+
+</menu>

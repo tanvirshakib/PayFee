@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TransactionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="New Transaction"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/purple_200"/>
+
+
+
+            <EditText
+
+                android:id="@+id/semesterNameInput"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:hint="Enter Semester Name"
+                android:padding="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/amountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Amount"
+                android:inputType="numberDecimal"
+                android:padding="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Pay With"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/bkashButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Bkash"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple_200"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/visaButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Debit"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple_200"></RadioButton>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/bkashNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bkash No"
+                android:padding="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/bkashPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pin"
+                android:inputType="number"
+                android:padding="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/cardName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name on Card"
+                android:padding="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/cardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:padding="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/cardExpiryDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Expiry Date"
+                    android:layout_margin="5dp"
+                    android:padding="20dp" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/cardCVC"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="CVC"
+                    android:inputType="number"
+                    android:layout_margin="5dp"
+                    android:padding="20dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- ProgressBar for Loading Time -->
+            <Button
+                android:id="@+id/submitTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Make Payment"
+                android:textAllCaps="false"
+                android:backgroundTint="@android:color/black"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

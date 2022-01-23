@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DueFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="591dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:text="Calculate Your Due"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/purple_200"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+
+                android:id="@+id/creditInput"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:hint="Enter Credit Number"
+                android:padding="20dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/waiverInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Waiver in Percent"
+                android:inputType="numberDecimal"
+                android:padding="20dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+
+            <EditText
+                android:id="@+id/retakeCreditInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Retake Credit"
+                android:inputType="numberDecimal"
+                android:padding="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/previousInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Previously Paid Amount"
+                android:inputType="numberDecimal"
+                android:padding="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <!-- ProgressBar for Loading Time -->
+            <Button
+                android:id="@+id/fatchDue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:padding="10dp"
+                android:text="Fetch"
+                android:textAllCaps="false" />
+
+
+            <TextView
+                android:id="@+id/resultDue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:text="Your Due:"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:text="Taka Only"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBarTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
